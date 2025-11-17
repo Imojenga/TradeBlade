@@ -38,7 +38,7 @@
 
 .deals-card {
   padding: 16px 16px 13px 16px;
-  background-image: url(../img/deals-bg.png);
+  background-image: url(/img/deals-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 4px;
