@@ -1,3 +1,5 @@
+import './styles.css';
+
 import './js/header.js';
 import './js/hero.js';
 import './js/deals.js';
