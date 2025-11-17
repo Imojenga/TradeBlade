@@ -2,127 +2,463 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/svg+xml" href="/TradeBlade/favicon.svg" />
+    <title>TradeBlade</title>
+    <script type="module" crossorigin src="/TradeBlade/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/TradeBlade/assets/vendor-5lQHumg_.js">
+    <link rel="stylesheet" crossorigin href="/TradeBlade/assets/vendor-CnBbOgWo.css">
+    <link rel="stylesheet" crossorigin href="/TradeBlade/assets/index-byFB472U.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header-container">
+    <a class="nav-logo" href="./index.html">
+      <picture>
+        <source
+          srcset="../img/logo-m.png 1x, ../img/logo-m@2x.png 2x"
+          media="(max-width: 1439px)"
+        />
+        <source
+          srcset="../img/logo-d.png 1x, ../img/logo-d@2x.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <img src="../img/logo-m.png" alt="TradeBlade logo" />
+      </picture>
+    </a>
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+          <a class="nav-link" href="#numbers">Цифры</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <a class="nav-link" href="#deals">Сделки онлайн</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">О компании</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#rates">Тарифы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="enter-list">
+      <li class="enter-item">
+        <a class="enter-link" href="">Вход</a>
+      </li>
+      <li class="enter-item">
+        <a class="enter-link accent" href="">Регистрация</a>
+      </li>
+    </ul>
+    <button class="burger-btn" type="button">
+      <svg class="burger-icon" width="24" height="16">
+        <use href="../img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <button class="mobile-close-btn" type="button">
+      <svg class="mobile-close-icon" width="32" height="32">
+        <use href="../img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#numbers">Цифры</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#deals">Сделки онлайн</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#about">О компании</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#rates">Тарифы</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+      <ul class="mobile-enter-list">
+        <li class="mobile-enter-item">
+          <a class="mobile-enter-link accent" href="">Регистрация</a>
+        </li>
+        <li class="mobile-enter-item">
+          <a class="mobile-enter-link" href="">Вход</a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
 
-
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
+      <section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-img">
+      <picture>
+        <source
+          srcset="../img/hero-img-m.png 1x, ../img/hero-img-m@2x.png 2x"
+          media="(max-width: 1439px)"
         />
-      </a>
+        <source
+          srcset="../img/hero-img-d.png 1x, ../img/hero-img-d@2x.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <img src="../img/hero-img-m.png" alt="Hero image with rates" />
+      </picture>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Моментально<br />копируй сделки<br />профи трейдеров
+      </h1>
+      <p class="hero-text">
+        Начни копировать сделки с успешной командой профессиональных<br />трейдеров
+        в автоматическом режиме.
+      </p>
+      <form class="hero-form">
+        <input
+          class="hero-input"
+          name="email"
+          type="email"
+          placeholder="Ваш e–mail"
+        />
+        <button class="hero-btn" type="submit">Начать</button>
+      </form>
+      <p class="hero-phrase">5 дней бесплатного пользования</p>
+    </div>
   </div>
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+      <section class="numbers-section" id="numbers">
+  <div class="container numbers-container">
+    <div class="numbers-div">
+      <h2 class="numbers-title">Цифры</h2>
+      <p class="numbers-text">Cентябрь 2022</p>
+    </div>
+    <ul class="numbers-list">
+      <li class="numbers-item">
+        <h3 class="numbers-list-title">Торговой</h3>
+        <h3 class="numbers-list-title">прибыли</h3>
+        <p class="numbers-list-text">2756%</p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li class="numbers-item">
+        <h3 class="numbers-list-title">Фьючерсных</h3>
+        <h3 class="numbers-list-title">и спотовых сделок</h3>
+        <p class="numbers-list-text">67</p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li class="numbers-item">
+        <h3 class="numbers-list-title">Прибыль подписчиков</h3>
+        <p class="numbers-list-text">375000</p>
       </li>
     </ul>
   </div>
-</article>
+</section>
+
+      <section class="deals-section" id="deals">
+  <div class="container">
+    <h2 class="deals-title">Прошедшие сделки</h2>
+    <p class="deals-text"><span class="deals-span"></span>Онлайн</p>
+    <div class="swiper deals-swiper">
+      <ul class="swiper-wrapper deals-list">
+        <li class="swiper-slide deals-card">
+          <img class="deals-logo" src="../img/deals-logo.png" />
+          <h3 class="deals-card-title">NEAR/USDT</h3>
+          <p class="deals-card-spot">
+            SPOT &#8901; <span class="deals-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="deals-card-income">Прибыль</p>
+          <p class="deals-card-percent">
+            58.6206% <span class="deals-card-percent-span">&#8593;</span>
+          </p>
+          <div class="deals-card-goal-wrp">
+            <p class="deals-card-goal">Цель 4</p>
+            <p class="deals-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+        <li class="swiper-slide deals-card">
+          <img class="deals-logo" src="../img/deals-logo.png" />
+          <h3 class="deals-card-title">BTC/USDT</h3>
+          <p class="deals-card-spot">
+            SPOT &#8901; <span class="deals-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="deals-card-income">Прибыль</p>
+          <p class="deals-card-percent">6.02% &#8593;</p>
+          <div class="deals-card-goal-wrp">
+            <p class="deals-card-goal">Цель 3</p>
+            <p class="deals-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+        <li class="swiper-slide deals-card">
+          <img class="deals-logo" src="../img/deals-logo.png" />
+          <h3 class="deals-card-title">ETH/USDT</h3>
+          <p class="deals-card-spot">
+            SPOT &#8901; <span class="deals-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="deals-card-income">Прибыль</p>
+          <p class="deals-card-percent">16.3% &#8593;</p>
+          <div class="deals-card-goal-wrp">
+            <p class="deals-card-goal">Цель 4</p>
+            <p class="deals-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+        <li class="swiper-slide deals-card">
+          <img class="deals-logo" src="../img/deals-logo.png" />
+          <h3 class="deals-card-title">NEAR/USDT</h3>
+          <p class="deals-card-spot">
+            SPOT &#8901; <span class="deals-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="deals-card-income">Прибыль</p>
+          <p class="deals-card-percent">0.963% &#8593;</p>
+          <div class="deals-card-goal-wrp">
+            <p class="deals-card-goal">Цель 4</p>
+            <p class="deals-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+        <li class="swiper-slide deals-card">
+          <img class="deals-logo" src="../img/deals-logo.png" />
+          <h3 class="deals-card-title">NEAR/USDT</h3>
+          <p class="deals-card-spot">
+            SPOT &#8901; <span class="deals-card-spot-span">1 мин. назад</span>
+          </p>
+          <p class="deals-card-income">Прибыль</p>
+          <p class="deals-card-percent">58.6206% &#8593;</p>
+          <div class="deals-card-goal-wrp">
+            <p class="deals-card-goal">Цель 4</p>
+            <p class="deals-card-date">Дата входа 06.10.2022</p>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-scrollbar">
+        <div class="swiper-scrollbar-drag"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="about-section" id="about">
+  <div class="container about-container">
+    <div class="about-content">
+      <h2 class="about-title">О компании</h2>
+      <p class="about-text">
+        Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+        является авторизованным официальным брокером биржи Binance.
+      </p>
+      <br />
+      <p class="about-text">
+        Он представляет пользователям множество преимуществ, таких как более
+        високая скорость синхронизации API и возможность создать учетную запись
+        Binance через платформу TradeBlade всего в 1 клик.
+      </p>
+    </div>
+    <div class="about-form-wrp">
+      <p class="about-desc">
+        Попробуйте сейчас и получите <br />5 дней бесплатного пользования
+      </p>
+      <form class="about-form">
+        <input
+          class="about-input"
+          name="email"
+          type="email"
+          placeholder="Ваш e–mail"
+        />
+        <button class="about-btn" type="submit">Попробовать</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+      <section class="rates-section" id="rates">
+  <div class="container rates-container">
+    <h2 class="rates-title">Тарифы</h2>
+    <ul class="rates-list">
+      <li class="rates-item spot-item">
+        <a class="rates-link spot-link">Спот</a>
+      </li>
+      <li class="rates-item futures-item">
+        <a class="rates-link futures-link">Фьючерс</a>
+      </li>
+    </ul>
+    <div class="rates-cards-wrp">
+      <div class="rates-card rates-card-left">
+        <div class="rates-card-upper">
+          <h3 class="rates-card-title">Standard</h3>
+          <ul class="rates-card-list rates-card-list-left">
+            <li class="rates-card-item">Ручной трейдинг</li>
+            <li class="rates-card-item">
+              Автоматическое или полуавтоматическое копирование сделок
+            </li>
+            <li class="rates-card-item">Личный кабинет со статистикой</li>
+            <li class="rates-card-item">
+              Среднесрочные сделки с<br />уровнями набора портфеля
+            </li>
+          </ul>
+        </div>
+        <div class="rates-card-lower">
+          <div class="rates-card-div">
+            <p class="rates-card-text">
+              $234<span class="rates-card-percent">-35%</span>
+            </p>
+            <select class="rates-card-select" name="months">
+              <option value="12">12 месяцев</option>
+              <option value="6">6 месяцев</option>
+              <option value="1">1 месяц</option>
+            </select>
+          </div>
+          <a class="rates-card-btn" href="#about">
+            Попробовать<span class="rates-card-span">5 дней бесплатно</span>
+          </a>
+        </div>
+      </div>
+      <div class="rates-card rates-card-right">
+        <div class="rates-card-upper">
+          <h3 class="rates-card-title">VIP</h3>
+          <ul class="rates-card-list rates-card-list-right">
+            <li class="rates-card-item">Ручной трейдинг</li>
+            <li class="rates-card-item">
+              Автоматическое или полуавтоматическое копирование сделок
+            </li>
+            <li class="rates-card-item">Личный кабинет со статистикой</li>
+            <li class="rates-card-item">
+              Краткосрочные, среднесрочные и инвест сделки
+            </li>
+            <li class="rates-card-item">Доступ в Vip чат с командой</li>
+            <li class="rates-card-item">Наш авторский курс по трейдингу</li>
+          </ul>
+        </div>
+        <div class="rates-card-lower">
+          <div class="rates-card-div">
+            <p class="rates-card-text">
+              $585<span class="rates-card-percent">-35%</span>
+            </p>
+            <select class="rates-card-select" name="months">
+              <option value="12">12 месяцев</option>
+              <option value="6">6 месяцев</option>
+              <option value="1">1 месяц</option>
+            </select>
+          </div>
+          <a class="rates-card-btn" href="#about">
+            Попробовать<span class="rates-card-span">5 дней бесплатно</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="faq-section" id="faq">
+  <div class="container faq-container">
+    <h2 class="faq-title">Часто задаваемые вопросы</h2>
+    <ul class="accordion-list">
+      <li class="ac accordion-item">
+        <h3 class="ac-header accordion-title">
+          Что такое TradeBlade<button class="ac-trigger accordion-btn">
+            <svg class="accordion-icon" width="14" height="8">
+              <use href="../img/sprite.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="accordion-text">
+            Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+            является авторизованным официальным брокером биржи Binance.
+          </p>
+          <br />
+          <p class="accordion-text">
+            Он представляет пользователям множество преимуществ, таких как более
+            високая скорость синхронизации API и возможность создать учетную
+            запись Binance через платформу TradeBlade всего в 1 клик.
+          </p>
+        </div>
+      </li>
+      <li class="ac accordion-item">
+        <h3 class="ac-header accordion-title">
+          Что TradeBlade предлагает инвесторам<button
+            class="ac-trigger accordion-btn"
+          >
+            <svg class="accordion-icon" width="14" height="8">
+              <use href="../img/sprite.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="accordion-text">
+            Copy–Trading позволяет следить за сделками команды и получать
+            прибыль 24/7 без каких–либо усилий или проблем для вас.
+          </p>
+        </div>
+      </li>
+      <li class="ac accordion-item">
+        <h3 class="ac-header accordion-title">
+          Должен ли я перевести свои средства на TradeBlade<button
+            class="ac-trigger accordion-btn"
+          >
+            <svg class="accordion-icon" width="14" height="8">
+              <use href="../img/sprite.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="accordion-text">
+            Начните бесплатную 5-дневную пробную версию. Кредитная карта не
+            требуется.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
     </main>
-
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer-container">
+    <div class="footer-left">
+      <div class="footer-desc">
+        <p class="footer-desc-item">Быстрая&nbsp;</p>
+        <p class="footer-desc-item">навигация</p>
+      </div>
+      <nav>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#numbers">Цифры</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#deals">Сделки онлайн</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#about">О компании</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#rates">Тарифы</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-right">
+      <img
+        class="footer-img"
+        srcset="../img/footer-img@2x.png 2x"
+        src="../img/footer-img.png"
+        alt="TradeBlade logo"
+        width="165"
+      />
+      <p class="footer-copy">&#169; 2022 TradeBlade. All rights reserved</p>
+    </div>
   </div>
 </footer>
-
 
   </body>
 </html>
