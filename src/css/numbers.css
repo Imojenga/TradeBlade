@@ -1,0 +1,99 @@
+.numbers-section {
+  background-color: var(--white);
+  padding-bottom: 48px;
+}
+
+.numbers-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.numbers-div {
+  padding: 40px 0;
+}
+
+.numbers-title {
+  font-size: 28px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 2px;
+}
+
+.numbers-text {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.04em;
+  color: #00000050;
+}
+
+.numbers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+  padding-right: 10px;
+}
+
+.numbers-item {
+  width: calc((100% - 10px) / 2);
+}
+
+.numbers-list-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+  color: #00000080;
+}
+
+.numbers-list-text {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--purple);
+  font-variant-numeric: slashed-zero;
+  padding-top: 4px;
+}
+
+@media screen and (min-width: 1440px) {
+  .numbers-section {
+    background-color: var(--white);
+    padding-bottom: 0;
+  }
+
+  .numbers-container {
+    flex-direction: row;
+  }
+
+  .numbers-div {
+    padding: 96px 157px 84px 0;
+  }
+
+  .numbers-title {
+    font-size: 44px;
+    line-height: 1.27;
+    padding-bottom: 4px;
+  }
+
+  .numbers-list {
+    width: 100%;
+    padding: 105px 95px 61px 0;
+  }
+
+  .numbers-item {
+    width: calc(100% / 3);
+  }
+
+  .numbers-list-title {
+    display: inline;
+  }
+
+  .numbers-list-text {
+    font-size: 60px;
+    padding-top: 8px;
+  }
+}

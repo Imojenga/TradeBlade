@@ -1,17 +1,81 @@
 <header class="header">
-  <div class="container">
+  <div class="container header-container">
+    <a class="nav-logo" href="./index.html">
+      <picture>
+        <source
+          srcset="../img/logo-m.png 1x, ../img/logo-m@2x.png 2x"
+          media="(max-width: 1439px)"
+        />
+        <source
+          srcset="../img/logo-d.png 1x, ../img/logo-d@2x.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <img src="../img/logo-m.png" alt="TradeBlade logo" />
+      </picture>
+    </a>
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+          <a class="nav-link" href="#numbers">Цифры</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <a class="nav-link" href="#deals">Сделки онлайн</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">О компании</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#rates">Тарифы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="enter-list">
+      <li class="enter-item">
+        <a class="enter-link" href="">Вход</a>
+      </li>
+      <li class="enter-item">
+        <a class="enter-link accent" href="">Регистрация</a>
+      </li>
+    </ul>
+    <button class="burger-btn" type="button">
+      <svg class="burger-icon" width="24" height="16">
+        <use href="../img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <button class="mobile-close-btn" type="button">
+      <svg class="mobile-close-icon" width="32" height="32">
+        <use href="../img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#numbers">Цифры</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#deals">Сделки онлайн</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#about">О компании</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#rates">Тарифы</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+      <ul class="mobile-enter-list">
+        <li class="mobile-enter-item">
+          <a class="mobile-enter-link accent" href="">Регистрация</a>
+        </li>
+        <li class="mobile-enter-item">
+          <a class="mobile-enter-link" href="">Вход</a>
         </li>
       </ul>
     </nav>
